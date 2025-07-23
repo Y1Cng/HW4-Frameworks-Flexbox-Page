@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>F-droid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="bg-gray-200">
+  <!-- Header -->
+  <header class="flex flex-col max-w-[75rem] mx-auto bg-white">
+        <a href="./index.html" class="p-8">
+            <img id="logo" src="./images/fdroid-logo-with-text.svg" alt="fdroid logo with text" class="w-[25rem] h-auto" />
+        </a>
+        <nav class="flex flex-wrap w-full bg-[#1976d2]">
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/packages/">Apps</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://forum.f-droid.org/">Forum</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/docs/">Docs</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/news/">News</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/issues/">Issues</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/contribute/">Contribute</a>
+            <a class="page-link m-4 text-white uppercase no-underline text-sm leading-8 h-8" href="https://f-droid.org/en/about/">About</a>
+        </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-[75rem] mx-auto mb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- Description -->
+    <section class="bg-white p-4 flex flex-col gap-4 md:col-span-2">
+      <h2 class="text-2xl font-bold">Description</h2>
+      <img src="./images/fdroid-logo.svg" alt="Fdroid Logo" class="max-w-[5rem]" />
+      <h3 class="text-xl font-semibold">What is F-Droid?</h3>
+      <p>
+        F-Droid is an installable catalogue of FOSS (Free and Open Source
+        Software) applications for the Android platform. The client makes it
+        easy to browse, install, and keep track of updates on your device.
+      </p>
+      <a href="https://f-droid.org/en/" target="_blank" class="text-blue-600 hover:underline">DOWNLOAD FDROID</a>
+    </section>
+
+    <!-- Last updated -->
+    <section class="bg-white p-4 md:col-span-1">
+      <h2 class="text-2xl font-bold">Last updated</h2>
+      <div class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+        <article class="p-4 md:w-full">
+          <img src="./images/app-grocy-icon.png" alt="app grocy icon" class="max-w-[9rem] mx-auto" />
+          <h3 class="text-lg font-semibold">Grocy: Self-hosted Grocery Management</h3>
+          <p>
+            RP beyond your fridge, now on your phone - An awesome companion
+            app for grocy
+          </p>
+        </article>
+        <article class="p-4 md:w-full">
+          <img src="./images/app-Phonograph-plus-icon.png" alt="app phonograph icon" class="max-w-[9rem] mx-auto"/>
+          <h3 class="text-lg font-semibold">Phonograph Plus</h3>
+          <p>A revived classic material designed local music player for Android</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="bg-white p-4 flex flex-col md:col-span-1">
+      <h2 class="text-2xl font-bold">News</h2>
+      <h3 class="flex items-center gap-2">
+        Posted on 2024-02-01 by
+        <img src="./images/user-linsui.jpg" alt="user-linsui" class="max-w-[2rem]" />linsui linsui
+      </h3>
+      <h3 class="text-xl font-semibold">
+        <a href="https://f-droid.org/en/2024/02/01/twif.html" class="text-blue-600 hover:underline">
+          Unattended updates for everyone, 1.19 is here
+        </a>
+      </h3>
+      <p>
+        TWIF generated on Thursday, 01 Feb 2024, Week 5 F-Droid core 🎉 We
+        announced last year that client work is underway to bring it up to the
+        target that future Android users and devs want. In the mean time we
+        kept teasing at every opportunity the coming of F-Droid client...
+      </p>
+    </section>
+
+    <!-- Donate -->
+    <section class="bg-white p-4 pb-10 md:col-span-2">
+      <h2 class="text-2xl font-bold">Donate</h2>
+      <div class="text-center">
+        <a href="https://opencollective.com/f-droid-euro">
+          <img src="./images/donate-collective.png" alt="donate logo" class="max-w-[30rem] mx-auto w-[80%] md:w-auto" />
+        </a>
+        <h3 class="text-xl font-semibold py-3">F-Droid is powered by your donations!</h3>
+        <p class="max-w-2xl mx-auto text-left">
+          If you want to contribute financially, we recommend using a free (as
+          in free software) donation platform like Liberapay or Open
+          Collective. Liberapay has lower fees but Open Collective allows more
+          flexibility and transparency on how the funds are used. Both
+          platforms allow for recurrent donations which are highly desirable
+          for making F-Droid sustainable.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>
+      &copy; 2010-2025 F-Droid Contributors (F-Droid 2025-02-03,
+      fdroid-website
+      <a href="https://gitlab.com/fdroid/fdroid-website/tree/e2e83b3cc1" class="text-blue-600 hover:underline">
+        2.195</a
+      >)
+    </p>
+
+    <div class="flex justify-center items-center">
+      <a href="https://fdroidstatus.org/" target="_blank" class="text-blue-600 hover:underline">Status</a>
+      <span class="mx-2">|</span>
+      <a href="https://gitlab.com/fdroid/fdroid-website/edit/master/" target="_blank" class="text-blue-600 hover:underline">Edit on GitLab</a>
+    </div>
+  </footer>
 </body>
 </html>
